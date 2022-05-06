@@ -41,11 +41,30 @@ const SignInpage = () => {
     >
       {({ handleSubmit, isSubmitting, isValid }) => (
         <form onSubmit={handleSubmit}>
-          <FormField name="email" type="email" label="E-mail" />
-          <FormField name="password" type="password" label="Password" />
-          <Button type="submit" className="block mt-4">
-            Sign In
-          </Button>
+          <div className="row">
+            <div className="col-md-6 mx-auto mt-4">
+              <div className="card card-body">
+                <h3 className="text-center text-white bg-dark">Sign in</h3>
+                <FormField
+                  name="email"
+                  className="form-control"
+                  type="email"
+                  label="E-mail"
+                />
+                <FormField
+                  name="password"
+                  className="form-control"
+                  type="password"
+                  label="Password"
+                />
+                <div className="form-group">
+                  <Button type="submit" className="btn btn-primary mt-4">
+                    Sign In
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
         </form>
       )}
     </Formik>

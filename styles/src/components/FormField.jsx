@@ -11,7 +11,7 @@ const FormField = (props) => {
           <span className="block mb-2">{label}</span>
           <Component {...field} {...otherProps} />
           {meta.error && meta.touched ? (
-            <span className="block text-red-700">{meta.error}</span>
+            <span className="text-danger">{meta.error}</span>
           ) : null}
         </label>
       )}
