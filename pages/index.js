@@ -1,21 +1,12 @@
 import Link from "next/link";
+import Navbar from "../styles/src/components/Navbar";
 
 const indexpage = () => {
   return (
     <div>
-      <h1>hello</h1>
-      <ul>
-        <li>
-          <Link href="/sign-in">
-            <a>sign in</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/sign-up">
-            <a>sign up</a>
-          </Link>
-        </li>
-      </ul>
+      <Navbar />
+      <h1>Blog</h1>
+
       <div className="mx-auto col-md-8">
         <h3 className="text-danger">
           <i>Blog comment</i>
